@@ -2,8 +2,7 @@ package main
 
 import "fmt"
 
-func calculateSum(limit int) int {
-	sum := 0
+func calculateSum(limit int) (sum int) {
 	for i := 1; i < limit; i++ {
 		switch {
 		case i % 15 == 0:
@@ -14,7 +13,7 @@ func calculateSum(limit int) int {
 			sum += i
 		}
 	}
-	return sum
+	return
 }
 
 func main() {
